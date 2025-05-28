@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap'); 
 
 * {
     margin: 0;
@@ -7,18 +7,17 @@
 }
 
 a, a:link, a:visited {
-    text-decoration: none; /* Remove underline */
     color: inherit;
+    text-decoration: none;
 }
 
 li {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
 }
 
 .container {
-    width: 1140%;
-    margin: 0 auto; /* Center the container */
-
+    width: 1140px;
+    margin: 0 auto;
 }
 
 header {
@@ -53,23 +52,23 @@ header button{
 
 header h1 button{
     font-size:2rem; 
-    font-weight:bold;
-    color: white; 
+    font-weight:bold; 
+    color: white;
 }
 
 header nav ul li button{
-    font-size:1.2rem; 
-    color: white;
+    font-size:1.2rem;
+    color: white; 
 }
 
 main {
     width: 100%;
     height: 100vh;
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/me.jpg') center center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/images/me.jpg') center center ;
     background-size: cover;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -88,11 +87,11 @@ main h2 {
 main p {
     max-width: 500px;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 main button.download {
-    background-color: transparent; /* Tomato color */
+    background-color: transparent;
     border: 3px solid white;
     border-radius: 20px;
     padding: 1rem 2rem;
@@ -119,28 +118,30 @@ main button.mouse {
     0% {
         bottom: 1rem;
     }
+
     50% {
         bottom: 1.5rem;
     }
+
     100% {
         bottom: 1rem;
     }
 }
 
 main h2 span::after {
-    content: '';
-    display: inline-block;
-    width: 3px;
+    content: "";
     height: 40px;
+    width: 3px;
     background-color: #ffffff;
-    animation: blink 1s ease-in-out infinite;
+    display: inline-block;
+    animation: blink 0.7s ease-in-out infinite;
 }
 
 @keyframes blink {
-    0%, 100% {
+    0% {
         opacity: 1;
     }
-    50% {
+    100% {
         opacity: 0;
     }
 }
@@ -151,7 +152,7 @@ section {
 }
 
 section:nth-child(2n) {
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
 }
 
 section .title {
@@ -173,9 +174,9 @@ section .title p {
 }
 
 section .about-self::after {
-    content: '';
-    display: block;
+    content: "";
     clear: both;
+    display: block;
 }
 
 section .about-self .left {
@@ -183,7 +184,7 @@ section .about-self .left {
     float: left;
 }
 
-section .about-self .lef img {
+section .about-self .left img {
     max-width: 100%;
 }
 
@@ -193,29 +194,28 @@ section .about-self .right {
     padding: 0 2rem;
 }
 
-
 section .about-self .right h3{
     font-size:2.25rem;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
-/* 본문 오른쪽 h3 태그의 strong 태그 색상 강조 */
+
 section .about-self .right h3 strong{
     color:#ed4848;
 }
-/* 본문 오른쪽 p 태그의 크기와 여백 지정 */
+
 section .about-self .right p{
     font-size:1.15rem;
-    margin:1rem 0;
+    margin: 1rem 0;
 }
-/* 본문 오른쪽의 아이콘 폰트 크기와 여백 지정 */
+
 section .about-self .right .social a{
-    font-size:2.5rem;
-    margin-right:0.2rem;
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
 }
 
 .bg {
     background: url('/images/background.jpg') center center;
     background-size: cover;
     background-attachment: fixed;
-    
+    height: 650px;
 }
